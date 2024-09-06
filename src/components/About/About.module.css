@@ -104,6 +104,38 @@
   font-size: 26px;
 }
 
+/* Hobbies Section */
+.hobbiesTitle {
+  font-size: 32px; /* Same size as education title */
+  margin-bottom: 16px; /* Same margin as education title */
+}
+
+.hobbiesList {
+  margin-top: 19px; /* Same margin as education list */
+}
+
+.hobbyItem {
+  list-style-type: none; /* Remove default list styling */
+}
+
+.hobbyItemContent {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: row; /* Align items in a row */
+  gap: 16px; /* Same gap as education items */
+  margin-bottom: 10px; /* Same spacing between items */
+  align-items: center; /* Center align items vertically */
+}
+
+.hobbyIcon {
+  font-size: 28px; /* Same size as education icons */
+  margin-top: 2px; /* Same top margin as education icons */
+  color: #5fbcff; /* Same color as education icons */
+}
+
+.hobbyItemDetails {
+  font-size: 26px; /* Same font size as education details */
+}
+
 /* Resume Section */
 .resumeLink a {
   font-size: 26px;

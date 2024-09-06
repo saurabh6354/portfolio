@@ -31,6 +31,7 @@ const About = () => {
             </p>
           </div>
         </li>
+        
         {/* Education Section */}
         <li className={styles.aboutItem}>
           <div className={styles.aboutIcon}>
@@ -119,6 +120,38 @@ const About = () => {
             </div>
           </div>
         </li>
+        {/* Hobbies Section */}
+<li className={styles.aboutItem}>
+  <div className={styles.aboutIcon}>
+    <i className="bx bxs-heart bx-tada"></i>
+  </div>
+  <div className={styles.aboutItemText}>
+    <h3 className={styles.hobbiesTitle}>My Hobbies</h3>
+    <p>
+      I enjoy a variety of activities in my free time:
+    </p>
+    <ul className={styles.hobbiesList}>
+      <li className={styles.hobbyItem}>
+        <div className={styles.hobbyItemContent}>
+          <i className={`bx bxs-cricket-ball ${styles.hobbyIcon}`}></i>
+          <div className={styles.hobbyItemDetails}>Playing Cricket</div>
+        </div>
+      </li>
+      <li className={styles.hobbyItem}>
+        <div className={styles.hobbyItemContent}>
+          <i className={`bx bxs-leaf ${styles.hobbyIcon}`}></i>
+          <div className={styles.hobbyItemDetails}>Gardening</div>
+        </div>
+      </li>
+      <li className={styles.hobbyItem}>
+        <div className={styles.hobbyItemContent}>
+          <i className={`bx bxs-plane-take-off ${styles.hobbyIcon}`}></i>
+          <div className={styles.hobbyItemDetails}>Travelling</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</li>
         {/* Resume Section */}
         <li className={styles.aboutItem}>
           <div className={styles.aboutIcon}>
@@ -134,7 +167,9 @@ const About = () => {
           </div>
         </li>
       </ul>
+      
     </section>
+    
   );
 };
 
