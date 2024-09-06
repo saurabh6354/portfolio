@@ -1,0 +1,26 @@
+[
+  {
+    "role": "MITACS Globalink Research Intern",
+    "organization": "MITACS",
+    "startDate": "June, 2023",
+    "endDate": "August, 2023",
+    "experiences": [
+        "Worked under Prof. Qing Tan as a MITACS intern on the development and smooth operation of DoctorsonHand, anonline telemedicine platform, focusing on streamlining user interfaces and refining back-end processes.",
+        "Developed mFieldtrip an open mobile application that is used for a self-guided field course in physical geography.",
+        "Upgraded the mFieldtrip mobile application with innovative features - integrating OCR, deploying data analytics, andincorporating field tools, to enhance the educational function and user engagement of the app."        ],
+    "imageSrc": "history/mitacs.png"
+  },
+  {
+    "role": "Flutter Developer Intern",
+    "organization": "SparkTG Info Pvt. Ltd.",
+    "startDate": "June, 2022",
+    "endDate": "July, 2022",
+    "experiences": [
+        " Developed 3 cross platform application.",
+        "Implemented REST APIs in the application",
+        "Built responsive user interfaces utilizing modern front-end technologies such as React, Angular, Material UI, and Chakra UI.",
+        " Worked on the improvement of the UI for better customer experience.",        
+        "Worked with real time data ."        ],
+    "imageSrc": "history/image.png"
+  }
+]

@@ -1,0 +1,12 @@
+* {
+  /* This means that the border is considered when calculating the width and height of the element */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+
+/* This property will make the scrolling smooth when navigating using the Navbar */
+html {
+  scroll-behavior: smooth;
+}

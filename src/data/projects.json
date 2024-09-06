@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Product Review Analyzer",
+    "imageSrc": "projects/product_analyzer.png",
+    "description": "Developed a Flask application utilizing BeautifulSoup for scraping Amazon reviews and TextBlob for sentiment analysis. Categorized reviews into sentiment levels for enhanced comprehension of customer opinions on Amazon products and Presented results through user-friendly pie charts and tables, aiding in actionable insights for market analysis",
+    "skills": ["Python", "Flask"],
+    "source": "https://github.com/saurabh6354/Product_Review_Analyzer"
+  },
+  {
+    "title": "Oblivion",
+    "imageSrc": "projects/app_logo.png",
+    "description": "Design and Developed a mobile application having 2 games using the Flutter Framework.The game consists of a 5 by 5 grid of lights. Pressing any of the lights will toggle it and the adjacent lights.The goal of the puzzle is to switch all the lights off, preferably in as few button presses as possible.and the other game is a physics motion visualizer.",
+    "skills": ["Flutter", "Dart", "Figma" , "Android Studio", "Git"],
+    "source": "https://github.com/saurabh6354/Oblivion"
+  }
+]

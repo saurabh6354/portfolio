@@ -1,0 +1,17 @@
+/* CSS variables help us define certain properties such as fonts and colors in a single place and import these variables in other places. This makes it easier to change the properties later on */
+
+:root {
+    /* Colors */
+    --color-text: #fff;
+    --color-primary: #576cbc;
+    --color-secondary: #19376d;
+    --color-dark: #0b2447;
+    --color-bg: #04152d;
+    --color-black: #000;
+    --color-light-blue: #00abf0;
+    --color-white: #ededed;
+    --color-text-dark: #081b29;
+
+    /* Fonts */
+    --font-roboto: "Roboto";
+}

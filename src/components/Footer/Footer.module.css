@@ -1,0 +1,30 @@
+@import "../../vars.css";
+
+.footerContainer {
+    position: relative;
+    padding: 20px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.footerCopyrightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.footerCopyrightText {
+    font-size: 24px;
+}
+
+.footerBackToTopIcon {
+    font-size: 50px;
+    color: var(--color-light-blue);
+    transition: .5s;
+}
+
+.footerBackToTopIcon:hover {
+    color: var(--color-white);
+}

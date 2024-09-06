@@ -1,0 +1,161 @@
+@import "../../vars.css";
+
+/* About Section */
+
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
+  padding: 73px;
+  margin-top: 129px;
+  z-index: 1; /* We want the box to be above our gradients, this is also why we used postion: relative. */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.anchor {
+  padding-top: 45px;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.aboutItems {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%; /* We're using this so that the gradient doesn't appear until the user hovers over it */
+}
+
+.aboutIcon {
+  color: #5fbcff;
+  font-size: 40px;
+  margin-right: 22px;
+  align-self: flex-start;
+  margin-top: -2px;
+}
+
+.aboutItem:hover {
+  background-size: 100% 100%;
+  background-repeat: no-repeat; /* We're adding this so the animation goes from left to right */
+  transition: 0.4s; /* This means any transition that is happening should take 0.4 seconds */
+}
+
+.aboutItem h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.aboutItem p {
+  font-size: 24px;
+}
+
+/* Education Section */
+.educationTitle {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.educationList {
+  margin-top: 19px;
+}
+
+.educationListItem {
+  list-style-type: none;
+}
+
+.educationListItemContent {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.educationListItemIcon {
+  font-size: 28px;
+  margin-top: 2px;
+  color: #5fbcff;
+}
+
+.educationListItemDetails {
+  font-size: 26px;
+}
+
+/* Resume Section */
+.resumeLink a {
+  font-size: 26px;
+  text-decoration: none;
+  padding-top: 4px;
+  color: var(--color-light-blue);
+}
+
+.resumeLink a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutItems {
+    margin-top: 29px;
+  }
+
+  .aboutItem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .aboutItem p {
+    font-size: 18px;
+  }
+
+  .resumeLink a {
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 4px;
+    color: var(--color-light-blue);
+  }
+}

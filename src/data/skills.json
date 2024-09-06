@@ -1,0 +1,44 @@
+[ {
+  "title": "Flutter",
+  "imageSrc": "skills/image.png"
+},
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSrc": "skills/bootstrap.png"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "skills/javascript.png"
+  },
+
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Python",
+    "imageSrc": "skills/python.png"
+  },
+ 
+  {
+    "title": "Material UI",
+    "imageSrc": "skills/material-ui.png"
+  },
+ 
+  {
+    "title": "Docker",
+    "imageSrc": "skills/docker.png"
+  },
+  {
+    "title": "VS Code",
+    "imageSrc": "skills/vs-code.png"
+  }
+]

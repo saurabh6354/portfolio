@@ -1,0 +1,252 @@
+@import "../../vars.css";
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+    margin-top: 80px;
+}
+
+.title {
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 33px;
+    font-family: var(--font-roboto);
+    /* In linear-gradient, 90deg means horizontal */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 120%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.description {
+    font-size: 30px;
+    font-family: var(--font-roboto);
+    margin-bottom: 52px;
+}
+
+.contactBtn {
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-white);
+    border: 2px solid var(--color-light-blue);
+    border-radius: 100px;
+    font-size: 30px;
+    color: var(--color-light-blue);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 17px 26px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.contactBtn:hover {
+    cursor: pointer;
+    color: var(--color-text-dark);
+    padding: 17px 30px;
+}
+
+.contactBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--color-light-blue);
+    z-index: -1;
+    transition: .5s;
+}
+
+.contactBtn:hover::before {
+    width: 100%;
+}
+
+.socialContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.socialTitle {
+    font-size: 32px;
+    margin-right: 24px;
+}
+
+.socialLinks {
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+
+.socialLinks a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: var(--color-white);
+    border: 2px solid var(--color-light-blue);
+    border-radius: 8px;
+    font-size: 30px;
+    color: var(--color-light-blue);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin-right: 10px;
+}
+
+.socialLinks a:hover {
+    color: var(--color-text-dark);
+    width: 55px;
+}
+
+.socialLinks a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--color-light-blue);
+    z-index: -1;
+    transition: .5s;
+}
+
+.socialLinks a:hover::before {
+    width: 100%;
+}
+
+.heroImgContainer {
+    width: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.heroImgContainerModal {
+    width: 50%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.heroImg {
+    width: 350px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    z-index: 1; /* We want this to appear above topBlur and bottomBlur */
+
+    animation-name: floating; /* The animation name can be named anything */
+    animation-duration: 3s; /* Duration of the animation */
+    animation-iteration-count: infinite; /* We want this image to keep going up and down */
+    /* ease-in-out means that whenever we reach a keyframe, the movement into it and out of it should be eased */
+    animation-timing-function: ease-in-out; /* This defines what the movement looks like */
+}
+
+.portfolioTechStack {
+    margin-top: 64px;
+}
+
+.portfolioDetails {
+    font-size: 24px;
+    height: 40px;
+}
+
+.portfolioReactIcon, .portfolioVercelIcon {
+    animation: spin 4s linear infinite;
+    margin-bottom: -6px;
+}
+
+/* Here, we're defining the keyframes for the floating animation */
+@keyframes floating {
+    /* 0% of the animation */
+    0% {
+        transform: translate(0, 0px);
+    }
+    /* 50% of the animation */
+    50% {
+        transform: translate(0, 10px);
+    }
+    /* 100% of the animation */
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+/* This is the keyframes for the spinning logo animations */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.topBlur {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    min-width: 350px;
+    min-height: 350px;
+    top: -128px;
+    left: -10vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.bottomBlur {
+    position: absolute;
+    width: 70vw;
+    height: 50vw;
+    min-width: 350px;
+    min-height: 250px;
+    top: 246px;
+    right: -25vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        flex-direction: column-reverse; /* We want the image to appear at the top, so we use column-reverse */
+    }
+
+    .content {
+        align-items: center;
+    }
+
+    .heroImg {
+        margin-bottom: 0;
+    }
+}
