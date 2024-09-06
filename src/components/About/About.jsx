@@ -160,7 +160,7 @@ const About = () => {
           <div className={styles.aboutItemText}>
             <h3>Resume</h3>
             <div className={styles.resumeLink}>
-              <a href="/Saurabh_Kumar.pdf" target="_blank">
+              <a href="https://drive.google.com/file/d/1wICAnlsWsqBen1trMYV8moJBrpb1rH_o/view?usp=sharing"target="_blank">
                 Saurabh_Kumar.pdf
               </a>
             </div>
